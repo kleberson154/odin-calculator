@@ -38,3 +38,5 @@ function callculator(a, b, operator) {
       break
   }
 }
+
+callculator()

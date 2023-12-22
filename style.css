@@ -1,5 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+body > h1 {
+  padding-bottom: 2rem;
+}
+
+.callculator {
+  background: #7f8c8d;
+  width: 24vw;
+  height: 53vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 4px solid #2c3e50;
+  border-radius: 15px;
+}
+
+.display {
+  background: #b3d4dd;
+  width: 85%;
+  height: 4rem;
+  margin: 20px 0;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 26px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+}
+
+.option {
+  width: 85%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.clear {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8db1c9;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+}
+
+.delete {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e69090;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+}
+.container {
+  width: 85%;
+  height: 49%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+
+button {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
 }
