@@ -1,42 +1,16 @@
-function callAdd(a, b) {
-  total = a + b
-  console.log(total)
+function getHistory() {
+  return document.getElementById('history-value').innerText
 }
-
-function callSub(a, b) {
-  total = a - b
-  console.log(total)
+function printHistory(num) {
+  document.getElementById('history-value').innerText = num
 }
-
-function callMult(a, b) {
-  total = a * b
-  console.log(total)
+function getOutput() {
+  return document.getElementById('output-value').innerText
 }
-
-function callDiv(a, b) {
-  total = a / b
-  console.log(total)
-}
-
-function callculator(a, b, operator) {
-  a = parseFloat(prompt('Digite o primeiro numero'))
-  operator = prompt('Digite o operador')
-  b = parseFloat(prompt('Digite o segundo numero'))
-
-  switch (operator) {
-    case '+':
-      callAdd(a, b)
-      break
-    case '-':
-      callSub(a, b)
-      break
-    case '*':
-      callMult(a, b)
-      break
-    case '/':
-      callDiv(a, b)
-      break
+function printOutput(num) {
+  if (num == '') {
+    document.getElementById('output-value').innerText = num
+  } else {
+    document.getElementById('output-value').innerText = getFormattedNumber(num)
   }
 }
-
-callculator()
